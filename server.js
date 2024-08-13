@@ -10,12 +10,12 @@ const app = express();
 const MONGO_URL = process.env.MONGO_URL
 const PORT = process.env.PORT || 3000
 
-var corsOptions = {
-    origin: ['http://localhost:9000', 'http://example.com'], // CORS allowed origins
-    optionsSuccessStatus: 200
-}
+// var corsOptions = {
+//     origin: ['http://localhost:9000', 'http://example.com'],
+//     optionsSuccessStatus: 200
+// }
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
